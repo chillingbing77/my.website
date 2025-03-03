@@ -1,68 +1,72 @@
-/* Reset default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body styling */
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f4f4f4;
-    color: #333;
+    background: linear-gradient(45deg, #ff0000, #ffffff);
+    color: white;
     margin: 0;
     padding: 0;
 }
 
-/* Header styling */
-header {
-    background-color: #d50000; /* Red Liverpool theme */
-    color: white;
-    padding: 20px;
-    font-size: 24px;
-    text-transform: uppercase;
+/* Navigation Bar */
+nav {
+    background: black;
+    padding: 10px 0;
 }
 
-/* Content container */
-.content {
-    background: white;
-    padding: 20px;
-    margin: 20px auto;
-    width: 90%;
-    max-width: 800px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
 }
 
-/* Image styling */
-.main-image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
+nav ul li {
+    margin: 0 15px;
 }
 
-/* Button styling */
-.btn {
-    display: inline-block;
-    margin-top: 15px;
-    padding: 10px 15px;
-    background: #007BFF;
+nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+}
+
+nav ul li a:hover {
+    background: red;
     border-radius: 5px;
-    transition: 0.3s ease;
+}
+
+/* Header */
+header h1 {
+    margin-top: 20px;
+    font-size: 32px;
+}
+
+/* Content */
+.content {
+    margin-top: 30px;
+}
+
+.content img {
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    background: black;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+    font-weight: bold;
 }
 
 .btn:hover {
-    background: #0056b3;
-}
-
-/* Responsive Design */
-@media (max-width: 600px) {
-    .content {
-        width: 95%;
-    }
+    background: red;
 }
