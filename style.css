@@ -1,59 +1,68 @@
-/* General Reset */
+/* Reset default styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
 }
 
-/* Body Styling */
+/* Body styling */
 body {
-    background: linear-gradient(to bottom, red, white);
+    font-family: Arial, sans-serif;
     text-align: center;
-    padding-top: 50px;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
-/* Header */
+/* Header styling */
 header {
-    background-color: red;
-    padding: 15px;
-}
-
-header h1 {
+    background-color: #d50000; /* Red Liverpool theme */
     color: white;
-    font-size: 32px;
+    padding: 20px;
+    font-size: 24px;
+    text-transform: uppercase;
 }
 
-/* Main Content */
+/* Content container */
 .content {
-    margin-top: 20px;
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.content img {
-    width: 200px;
+/* Image styling */
+.main-image {
+    max-width: 100%;
     height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
 }
 
-/* Sample Text */
-.description {
-    font-family: 'Bebas Neue', sans-serif; /* Similar to Liverpool Font */
-    font-size: 20px;
-    color: black;
-    margin: 10px 0;
-}
-
-/* Button */
+/* Button styling */
 .btn {
     display: inline-block;
-    padding: 10px 20px;
-    background-color: red;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #007BFF;
     color: white;
-    font-size: 18px;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 10px;
+    transition: 0.3s ease;
 }
 
 .btn:hover {
-    background-color: darkred;
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .content {
+        width: 95%;
+    }
 }
