@@ -144,3 +144,27 @@ html {
     transform: scale(1.1);
     color: gold;
 }
+/* Hover effect for Liverpool Logo */
+.logo {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+/* Hover effect for Liverpool Achievements Table */
+.achievements {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.achievements:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 223, 0, 0.8);
+}
+
+/* Optional: Add smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
