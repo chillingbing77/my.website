@@ -115,3 +115,32 @@ td {
     color: black; /* Make text black for better visibility */
     font-weight: bold; /* Make text bolder */
 }
+/* Enable smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Players Section Styling */
+.players {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background: linear-gradient(to right, #ff0000, #900000);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+/* Player name styles */
+.player-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Hover effect on player names */
+.player-name:hover {
+    transform: scale(1.1);
+    color: gold;
+}
