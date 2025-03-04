@@ -5,23 +5,29 @@
   box-sizing: border-box;
 }
 
-/* Body styling */
+/* Body styling with gradient background */
 body {
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  color: #333;
   text-align: center;
   line-height: 1.6;
+  /* This gradient goes from red at the top to white at the bottom */
+  background: linear-gradient(180deg, #d50000 0%, #ffffff 100%);
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-/* Header styling */
+/* Header styling (keep the text white, remove solid background to show gradient if you like) */
 header {
-  background: #c8102e;
   color: #fff;
   padding: 20px;
+  margin-bottom: 20px; /* Adds spacing below header */
+  /* If you prefer a solid red header, uncomment:
+     background: #c8102e;
+  */
 }
 
-/* Content container */
+/* Content container (white box) */
 .content {
   width: 90%;
   max-width: 800px;
